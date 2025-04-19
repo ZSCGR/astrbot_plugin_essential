@@ -54,7 +54,7 @@ class Main(Star):
     @filter.command("一言")
     async def hitokoto(self, message: AstrMessageEvent):
         """来一条一言"""
-        url = "https://v1.hitokoto.cn"
+        url = "https://yiyan.chgr.cc"
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as resp:
                 if resp.status != 200:
